@@ -1,0 +1,37 @@
+{
+  "name": "critik",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.",
+  "main": "package.json",
+  "author": "Florian Zobèle <zobeleflorian@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "sanity start",
+    "test": "sanity check"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^0.140.17",
+    "@sanity/components": "^0.140.25",
+    "@sanity/core": "^0.140.25",
+    "@sanity/default-layout": "^0.140.25",
+    "@sanity/default-login": "^0.140.15",
+    "@sanity/desk-tool": "^0.140.25",
+    "prop-types": "^15.6",
+    "react": "^16.2",
+    "react-dom": "^16.2"
+  },
+  "devDependencies": {
+    "husky": "^2.3.0",
+    "prettier": "^1.17.1",
+    "pretty-quick": "^1.11.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
